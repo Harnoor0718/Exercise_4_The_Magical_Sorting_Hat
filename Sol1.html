@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Exercise</title>
+  </head>
+  <body>
+    The Magical Sorting Hat
+    <script>
+      let students = [
+        "shubh","anajali","Shivani","Shivangi","Annapurna","Shubham", "Krishnanendu", "Ravindranathan", "Shivesh", "kaif", "Emanuel",
+      ];
+
+      let houses = [];
+      for (const student of students) {
+        if(student.length < 6){
+            houses.push("Gryffindor");
+        }
+        else if(student.length >= 6 && student.length <8){
+            houses.push("Gryffindor");
+        }
+         else if(student.length >= 8 && student.length <12){
+            houses.push("Hufflepuff");
+        }
+        else{
+            houses.push("Slytherin");
+        }
+      }
+      console.log(houses);
+    </script>
+  </body>
+</html>
